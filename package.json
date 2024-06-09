@@ -1,0 +1,31 @@
+{
+	"name": "bhooks",
+	"version": "3.8.0",
+	"type": "module",
+	"description": "react hooks library",
+	"keywords": [
+		"bhooks",
+		"react hooks"
+	],
+	"dependencies": {
+		"ahooks": "^3.8.0"
+	},
+	"scripts": {
+		"start": "node main.js"
+	},
+	"files": [
+		"dist",
+		"lib",
+		"es",
+		"package.json",
+		"README.md"
+	],
+	"main": "./lib/index.js",
+	"module": "./es/index.js",
+	"unpkg": "dist/ahooks.js",
+	"types": "./src/index.ts",
+	"devDependencies": {
+		"esbuild": "^0.21.4",
+		"typescript": "^5.4.5"
+	}
+}
