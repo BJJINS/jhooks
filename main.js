@@ -2,8 +2,9 @@ import { exec } from 'child_process';
 import * as esbuild from 'esbuild';
 
 let ctx = await esbuild.context({
-  entryPoints: ['./src/index.ts'],
+  entryPoints: ['./app.tsx'],
   bundle: true,
+  sourcemap: true,
   format: 'esm',
   outdir: 'dist'
 });
